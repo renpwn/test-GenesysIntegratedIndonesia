@@ -1,53 +1,68 @@
-Berikut **README.md versi siap pakai** (bisa langsung **copy–paste** ke GitHub **atau** kamu simpan sebagai file `README.md`).
-Isinya sudah disesuaikan dengan hasil analisa project di dalam ZIP yang kamu upload.
+## ✅ README.md FINAL (SIAP COPY–PASTE)
+
+> **Copy 100% isi di bawah ini ke file `README.md`**
+
+````markdown
+# 🚀 Genesys Integrated Indonesia – Technical Test
+
+![Laravel](https://img.shields.io/badge/Laravel-10%2B-red?logo=laravel)
+![PHP](https://img.shields.io/badge/PHP-8.x-blue?logo=php)
+![Tailwind](https://img.shields.io/badge/TailwindCSS-3.x-38BDF8?logo=tailwindcss)
+![Vite](https://img.shields.io/badge/Vite-4.x-646CFF?logo=vite)
+![License](https://img.shields.io/badge/License-Private-lightgrey)
 
 ---
 
-```markdown
-# Genesys Integrated Indonesia – Technical Test
+Project ini merupakan **technical test** berbasis **Laravel** yang dikembangkan untuk kebutuhan  
+**Genesys Integrated Indonesia**.
 
-Project ini merupakan **technical test** berbasis **Laravel** yang dikembangkan untuk kebutuhan **Genesys Integrated Indonesia**.  
-Aplikasi ini menggunakan **Laravel Breeze**, **Tailwind CSS**, dan **Vite** sebagai stack utama.
+Aplikasi telah terintegrasi dengan:
+
+- 🔐 **Laravel Breeze** (Authentication)
+- 🎨 **Tailwind CSS**
+- ⚡ **Vite**
+- 🗄️ **MySQL / MariaDB**
 
 ---
 
 ## 📦 Tech Stack
 
-- **Backend**: Laravel 10+
-- **Frontend**: Blade + Tailwind CSS
-- **Auth Scaffolding**: Laravel Breeze
-- **Build Tool**: Vite
-- **Database**: MySQL / MariaDB
-- **Package Manager**:
-  - PHP: Composer
-  - JS: NPM
+| Layer      | Teknologi |
+|-----------|-----------|
+| Backend   | Laravel 10+ |
+| Frontend | Blade + Tailwind CSS |
+| Auth     | Laravel Breeze |
+| Build    | Vite |
+| Database | MySQL / MariaDB |
+| Package  | Composer & NPM |
 
 ---
 
-## 📁 Struktur Folder Utama
+## 📁 Struktur Folder
 
-```
+> Struktur ini **AMAN** di GitHub (tidak akan rusak / tanpa spasi)
 
+```text
 test-GenesysIntegratedIndonesia-main/
-├── Coding/
-│   ├── app/                # Core application logic
-│   ├── bootstrap/          # Laravel bootstrap files
-│   ├── config/             # Application configuration
-│   ├── database/
-│   │   ├── migrations/     # Database migrations
-│   │   └── seeders/        # Database seeders
-│   ├── public/             # Public assets
-│   ├── resources/
-│   │   ├── views/          # Blade templates
-│   │   └── css/js          # Tailwind & JS resources
-│   ├── routes/             # Web & API routes
-│   ├── storage/            # Logs & cache
-│   ├── tests/              # Feature & unit tests
-│   ├── .env.example
-│   ├── composer.json
-│   ├── package.json
-│   └── vite.config.js
-
+└── Coding/
+    ├── app/                # Core application logic
+    ├── bootstrap/          # Laravel bootstrap files
+    ├── config/             # Application configuration
+    ├── database/
+    │   ├── migrations/     # Database migrations
+    │   └── seeders/        # Database seeders
+    ├── public/             # Public assets
+    ├── resources/
+    │   ├── views/          # Blade templates
+    │   └── css/
+    │       └── js/         # Tailwind & JS resources
+    ├── routes/             # Web & API routes
+    ├── storage/            # Logs & cache
+    ├── tests/              # Feature & unit tests
+    ├── .env.example
+    ├── composer.json
+    ├── package.json
+    └── vite.config.js
 ````
 
 ---
@@ -55,31 +70,32 @@ test-GenesysIntegratedIndonesia-main/
 ## ⚙️ Instalasi & Setup
 
 ### 1️⃣ Clone Repository
+
 ```bash
 git clone https://github.com/username/test-GenesysIntegratedIndonesia.git
-cd test-GenesysIntegratedIndonesia/Coding
-````
+cd test-GenesysIntegratedIndonesia-main/Coding
+```
 
-### 2️⃣ Install Dependency Backend
+### 2️⃣ Install Backend Dependency
 
 ```bash
 composer install
 ```
 
-### 3️⃣ Install Dependency Frontend
+### 3️⃣ Install Frontend Dependency
 
 ```bash
 npm install
 ```
 
-### 4️⃣ Konfigurasi Environment
+### 4️⃣ Environment Setup
 
 ```bash
 cp .env.example .env
 php artisan key:generate
 ```
 
-Sesuaikan konfigurasi database di file `.env`:
+Atur database di `.env`:
 
 ```env
 DB_DATABASE=your_db_name
@@ -103,19 +119,19 @@ php artisan db:seed
 
 ## ▶️ Menjalankan Aplikasi
 
-### Jalankan Laravel Server
+### Backend
 
 ```bash
 php artisan serve
 ```
 
-### Jalankan Vite (Frontend)
+### Frontend (Vite)
 
 ```bash
 npm run dev
 ```
 
-Akses aplikasi melalui:
+🌐 Akses:
 
 ```
 http://127.0.0.1:8000
@@ -125,7 +141,7 @@ http://127.0.0.1:8000
 
 ## 🔐 Autentikasi
 
-Project ini menggunakan **Laravel Breeze**, sehingga sudah tersedia fitur:
+Menggunakan **Laravel Breeze**, fitur tersedia:
 
 * Login
 * Register
@@ -133,9 +149,9 @@ Project ini menggunakan **Laravel Breeze**, sehingga sudah tersedia fitur:
 * Reset Password
 * Email Verification
 
-Semua controller auth dapat ditemukan di:
+Lokasi controller:
 
-```
+```text
 app/Http/Controllers/Auth
 ```
 
@@ -151,17 +167,21 @@ php artisan test
 
 ## 📝 Catatan Teknis
 
-* Menggunakan standar struktur Laravel
-* Siap dikembangkan untuk CRUD, ERP module, atau REST API
-* Frontend sudah mendukung **Tailwind CSS**
-* Konfigurasi Vite sudah terintegrasi
+* Mengikuti **best practice Laravel**
+* Mudah dikembangkan ke:
+
+  * CRUD Module
+  * ERP / Inventory System
+  * REST API
+* UI sudah siap **dark / light mode** via Tailwind
+* Asset bundling via **Vite**
 
 ---
 
 ## 📄 License
 
-Project ini dibuat **khusus untuk keperluan technical test**.
-Tidak diperuntukkan untuk penggunaan komersial tanpa izin.
+🔒 Project ini dibuat **khusus untuk keperluan technical test**
+Tidak untuk distribusi atau penggunaan komersial.
 
 ---
 
@@ -169,18 +189,3 @@ Tidak diperuntukkan untuk penggunaan komersial tanpa izin.
 
 **Technical Test – Genesys Integrated Indonesia**
 Built with ❤️ using Laravel
-
-```
-
----
-
-### ✅ Opsi Selanjutnya
-Kalau kamu mau, aku bisa:
-- 🔹 Sesuaikan README untuk **ERP / Inventory System**
-- 🔹 Tambahkan **API Documentation**
-- 🔹 Buat **README versi HR / Non-Teknis**
-- 🔹 Review kualitas kode & best practice Laravel
-- 🔹 Tambahkan **badge GitHub (Laravel, PHP, License, dll)**
-
-Tinggal bilang mau fokus ke arah mana 👍
-```
