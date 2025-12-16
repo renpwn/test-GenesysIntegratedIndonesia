@@ -1,8 +1,3 @@
-## ✅ README.md FINAL (SIAP COPY–PASTE)
-
-> **Copy 100% isi di bawah ini ke file `README.md`**
-
-````markdown
 # 🚀 Genesys Integrated Indonesia – Technical Test
 
 ![Laravel](https://img.shields.io/badge/Laravel-10%2B-red?logo=laravel)
